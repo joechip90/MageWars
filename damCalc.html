@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mage Wars: Damage Calculator</title>
+<!-- Include the javascript files -->
+<script type="text/javascript" src="js/ndArray.js"></script>
+<script type="text/javascript" src="js/damcalc.js"></script>
+<!-- Include the CSS stylesheet -->
+<link rel="stylesheet" type="text/css" href="css/damCalcStyle.css" />
+</head>
+<body>
+<h1>Damage Probability Calculator</h1>
+<div id="damInput_div">
+    <h2>Attacker Information</h2>
+	<div class="inputRow_div">
+    	<span class="inputRowDesc_span">Basic attack dice</span>
+        <span class="inputRowInput_span"><input type="text" id="basicAttack_frm" class="numberEntry_frm" value="3" /></span>
+        <span class="inputRowWarn_span" id="basicAttackWarn_span"></span>
+    </div>
+    <div class="inputRow_div">
+    	<span class="inputRowDesc_span">Melee bonus</span>
+        <span class="inputRowInput_span"><input type="text" id="meleeBonus_frm" class="numberEntry_frm" value="0" /></span>
+        <span class="inputRowWarn_span" id="meleeBonusWarn_span"></span>
+    </div>
+    <div class="inputRow_div">
+    	<span class="inputRowDesc_span">Number of attacks</span>
+        <span class="inputRowInput_span"><input type="text" id="numAttacks_frm" class="numberEntry_frm" value="1" /></span>
+        <span class="inputRowWarn_span" id="numAttacksWarn_span"></span>
+    </div>
+    <div class="inputRow_div">
+    	<span class="inputRowDesc_span">Piercing</span>
+        <span class="inputRowInput_span"><input type="text" id="piercing_frm" class="numberEntry_frm" value="0" /></span>
+        <span class="inputRowWarn_span" id="piercingWarn_span"></span>
+    </div>
+    <div class="inputRow_div">
+    	<input type="checkbox" name="ethereal_frm" id="ethereal_frm" value="1" /><span class="inputRowDesc_span">Ethereal</span>
+    </div>
+    <h2>Defender Information</h2>
+    <div class="inputRow_div">
+    	<span class="inputRowDesc_span">Armour</span>
+        <span class="inputRowInput_span"><input type="text" id="armour_frm" class="numberEntry_frm" value="0" /></span>
+        <span class="inputRowWarn_span" id="armourWarn_span"></span>
+    </div>
+    <div class="inputRow_div">
+    	<input type="checkbox" name="resilient_frm" id="resilient_frm" value="1" /><span class="inputRowDesc_span">Resilient</span>
+    </div>
+    <div class="inputRow_div">
+    	<input type="checkbox" name="incorporeal_frm" id="incorporeal_frm" value="1" /><span class="inputRowDesc_span">Incorporeal</span>
+    </div>
+    <div class="inputRow_div">
+    	<input type="checkbox" name="veterans_frm" id="veterans_frm" value="1" /><span class="inputRowDesc_span">Veteran's belt</span>
+    </div>
+    <div class="inputRow_div">
+    	<input type="button" value="Calculate" id="calculate_button" onclick="runCalculation();" />
+    </div>
+</div>
+<div id="damResults_div">
+</div>
+</body>
+</html>

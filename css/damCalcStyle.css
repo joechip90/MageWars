@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+span.inputRowDesc_span {
+	display: inline-block;
+	width: 120px;
+}
+
+input.numberEntry_frm {
+	width: 40px;
+}
+
+span.inputRowWarn_span {
+	font-size: smaller;
+	color: rgba(255, 0, 0, 1.0);
+}
+
+span.keyResultTitle_span {
+	font-weight: bolder;
+	display: inline-block;
+	width: 160px;
+}
+
+span.keyResult_span {
+	color: rgba(0, 0, 255, 1.0);
+	display: inline-block;
+	width: 60px;
+}
+
+div.keyResult_div > a {
+	font-size: x-small;
+}
+
+table.damTable_table {
+	table-layout: fixed;
+}
+
+tr.damTableHead_tr {
+	background-color: rgb(0, 0, 255);
+	font-weight: bolder;
+	color: rgb(255, 255, 255);
+}
+
+tr.damTableHead_tr > td {
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 200px;
+}
+
+td.damTableDam_td {
+	font-weight: bolder;
+}
